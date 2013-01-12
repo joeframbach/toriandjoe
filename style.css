@@ -1,6 +1,4 @@
 body {
-  height: 100%;
-  width: 100%;
   background-color: #c0c0c0;
 }
 
@@ -55,4 +53,19 @@ body {
 
 .content a {
 	text-decoration: none;
+}
+
+iframe {
+  border-radius:5px;
+  margin: 5px auto;
+}
+
+.tori, .joe {
+  width:150px;
+  float:right;
+  margin:5px;
+  border-radius:5px;
+  -moz-box-shadow:    5px 5px 3px 1px #c0c0c0;
+  -webkit-box-shadow: 5px 5px 3px 1px #c0c0c0;
+  box-shadow:         5px 5px 3px 1px #c0c0c0;
 }
