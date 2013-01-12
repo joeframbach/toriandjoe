@@ -44,11 +44,13 @@ body {
 .title {
   padding: 30px;
   font-family: 'Donegal One', serif;
+  font-size: 1.25em;
 }
 
 .content {
   padding: 0px 30px 30px 30px;
-  font-family: 'Tinos', serif;
+  font-family: 'Donegal One', serif;
+  font-size: 0.9em;
 }
 
 .content a {
