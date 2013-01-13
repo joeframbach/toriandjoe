@@ -3,9 +3,8 @@ body {
 }
 
 .page {
-  width: auto;
-  margin: 20px auto;
   background-color:#E6DDC6;
+  margin: 20px auto;
 }
 
 .bottom-gradient {
@@ -18,9 +17,82 @@ body {
   font-size: 1.25em;
 }
 
+.content {
+  padding: 0px 30px 30px 30px;
+  font-family: 'Donegal One', serif;
+  font-size: 0.9em;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.content iframe {
+  height: 200px;
+  margin: 5px auto;
+}
+
+.content img {
+  float: right;
+  margin: 5px;
+}
+
+.content .tori,
+.content .joe {
+  width: 50%;
+  max-width: 150px;
+}
+
+p.address {
+  font-style: italic;
+}
+
+/* narrow */
+@media (max-width: 559px) {
+  .content .wide-pic {
+    display: none;
+  }
+
+  .page {
+    width: 100%;
+  }
+
+  .content .narrow-pic {
+    width: 50%;
+    max-width: 150px;
+    float:right;
+  }
+
+  .content iframe {
+    width: 100%;
+    clear:both;
+  }
+}
+
+/* wide */
 @media (min-width: 560px) {
   .page {
     width: 500px;
+  }
+
+  .content img,
+  .content iframe {
+    border-radius: 5px;
+    -moz-box-shadow:    5px 5px 3px 1px #c0c0c0;
+    -webkit-box-shadow: 5px 5px 3px 1px #c0c0c0;
+    box-shadow:         5px 5px 3px 1px #c0c0c0;
+  }
+
+  .content iframe {
+    width: 265px;
+  }
+
+  .content .narrow-pic {
+    display: none;
+  }
+
+  .content .wide-pic {
+    width: 150px;
   }
 
   .page-gradient {
@@ -66,34 +138,4 @@ body {
     background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 45px,rgba(255,255,255,0.25) 73%,rgba(255,255,255,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
   }
-}
-
-.content {
-  padding: 0px 30px 30px 30px;
-  font-family: 'Donegal One', serif;
-  font-size: 0.9em;
-}
-
-.content a {
-	text-decoration: none;
-}
-
-.content iframe {
-  width: 265px;
-  height: 200px;
-  border-radius:5px;
-  -moz-box-shadow:    5px 5px 3px 1px #c0c0c0;
-  -webkit-box-shadow: 5px 5px 3px 1px #c0c0c0;
-  box-shadow:         5px 5px 3px 1px #c0c0c0;
-  margin: 5px auto;
-}
-
-.content img {
-  width:150px;
-  float:right;
-  margin:5px;
-  border-radius:5px;
-  -moz-box-shadow:    5px 5px 3px 1px #c0c0c0;
-  -webkit-box-shadow: 5px 5px 3px 1px #c0c0c0;
-  box-shadow:         5px 5px 3px 1px #c0c0c0;
 }
