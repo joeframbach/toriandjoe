@@ -1,3 +1,7 @@
+.clearfix {
+  clear:both;
+}
+
 body {
   background-color: #c0c0c0;
 }
@@ -49,7 +53,7 @@ p.address {
 
 /* narrow */
 @media (max-width: 559px) {
-  .content .wide-pic {
+  .content img {
     display: none;
   }
 
@@ -57,15 +61,13 @@ p.address {
     width: 100%;
   }
 
-  .content .narrow-pic {
-    width: 50%;
-    max-width: 150px;
-    float:right;
+  .content {
+    padding: 5px;
   }
 
   .content iframe {
-    width: 100%;
-    clear:both;
+    width: 90%;
+    clear: both;
   }
 }
 
@@ -87,11 +89,7 @@ p.address {
     width: 265px;
   }
 
-  .content .narrow-pic {
-    display: none;
-  }
-
-  .content .wide-pic {
+  .content img {
     width: 150px;
   }
 
@@ -138,4 +136,10 @@ p.address {
     background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.25) 45px,rgba(255,255,255,0.25) 73%,rgba(255,255,255,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
   }
+}
+
+.reg-logo {
+  width: auto !important;
+  height: 80px !important;
+  float: none !important;
 }
