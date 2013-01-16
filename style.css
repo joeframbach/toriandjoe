@@ -140,6 +140,7 @@ p.address {
 
 .reg-logo {
   width: auto !important;
-  height: 80px !important;
+  height: 75px !important;
   float: none !important;
+  display: inline-block !important;
 }
