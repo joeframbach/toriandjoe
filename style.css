@@ -144,3 +144,10 @@ p.address {
   float: none !important;
   display: inline-block !important;
 }
+
+.reg-logo:hover {
+    margin: 7px 3px 3px 7px;
+    -moz-box-shadow:    3px 3px 3px 1px #c0c0c0;
+    -webkit-box-shadow: 3px 3px 3px 1px #c0c0c0;
+    box-shadow:         3px 3px 3px 1px #c0c0c0;
+}
